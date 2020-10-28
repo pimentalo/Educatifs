@@ -1,0 +1,42 @@
+{
+	"invariables1": {
+		"nom": "Mots invariables CE 1/6",
+		"liste": ["ailleurs,ainsi,alors,après,assez,aujourd'hui,aussi,autant,autour,avec,beaucoup,bien,bientôt,car"]
+	},
+	"invariables2": {
+		"nom": "Mots invariables CE2 2/6",
+		"liste": ["cela,cependant,chez,comme,comment,contre,d'abord,dans,déjà,depuis,derrière,dès que,dessus,devant,donc"]
+	},
+	"invariables3": {
+		"nom": "Mots invariables CE2 3/6",
+		"liste": ["dont,encore,enfin,entre,ici,jamais,jusque,là-bas,loin,longtemps,lorsque,maintenant,mais,même,malgré"]
+	},
+	"invariables4": {
+		"nom": "Mots invariables CE2 4/6",
+		"liste": ["mieux,moins,non,oui,par,parce que,parfois,partout,pas,pendant,personne,peu,plus,plusieurs,pour"]
+	},
+	"invariables5": {
+		"nom": "Mots invariables CE2 5/6",
+		"liste": ["pourquoi,pourtant,près,presque,puis,puisque,quand,rien,sans,selon,seulement,sous,souvent,sur"]
+	},
+	"invariables6": {
+		"nom": "Mots invariables CE2 6/6",
+		"liste": ["surtout,tandis que,tant,tard,toujours,travers,très,trop", "vers", "vite", "voici,voilà", "vraiment"]
+	},
+	"CM2S01": {
+		"nom": "CM2 - Semaine 1",
+		"liste": ["amuser,occasion,voile,éclater,importance,quartier,soi,auteur,religion,palais,réunir,traiter,flot,intelligence,tantôt,voisin,carte,secret"]
+	},
+	"CM2S02": {
+		"nom": "CM2 - Semaine 2",
+		"liste": ["animal,été,traîner,cabinet,morceau,employer,capable,souffrance,marquer,prouver,importer,titre,désert,facile,spectacle,exiger,reposer,départ"]
+	},
+	"CM2S21": {
+		"nom": "CM2 - Semaine 21",
+		"liste": ["agent,fonder,roman,franchir,plante,abattre,discuter,fatiguer,humide,réflexion,consentir,accent,curieux,repas,étendue,regretter,joindre,profondément"]
+	},
+	"CM2S22": {
+		"nom": "CM2 - Semaine 22",
+		"liste": ["secours,commencement,secrétaire,précieux,consulter,repousser,paupière,certainement,exécuter,corde,vaincre,saison,haïr,précis,tapis,chasse,nul,clef"]
+	}
+}

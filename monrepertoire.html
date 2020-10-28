@@ -1,0 +1,99 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html" charset="utf-8"> 
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css"/>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="monrepertoire/monrepertoire.js"></script>
+	</head>
+	<body>
+		<div class="container fluid">
+			<div class="row justify-content-center">
+				<div class="col-sm-12 col-md-8">
+				
+					<nav class="navbar navbar-expand-lg navbar-light bg-light">
+						<a class="navbar-brand" href="#">Mon répertoire</a>
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+
+						<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav mr-auto">
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									<i class="fa fa-cog"></i>
+								</a>
+								<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+									<a class="dropdown-item" href="#" id="acRecommencer">Recommencer</a>
+									<a class="dropdown-item" href="#" id="acAjouterRep">Ajouter un répertoire</a>
+									<div class="dropdown-divider"></div>
+									<a class="dropdown-item" href="#" id="acTelecharger">Télécharger le répertoire</a>
+									<div>
+										<form>
+											<!-- permet de sélectionner la voix-->
+											Voix: <select name="voix" id="selVoice"></select>
+										</form>
+									</div>
+								</div>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link btn btn-warning" href="#" onclick="location.reload()">Recommencer</a>
+							</li>
+						</ul>
+					</nav>
+					
+					<div class="spinner-grow" role="status" id="loader">
+						<span class="sr-only">Démarrage de la synthèse vocale</span>
+					</div>
+					
+					<!-- Sélection du répertoire ... cela déclenche tout, ce n'est possible qu'une fois le démarrage de la synthèse vocale effectué --> 
+					<div class="form-group">
+						<label for="selRepertoire">Choisis un répertoire</label>
+						<select class="form-control" id="selRepertoire">
+						<!--	<option value="monrepertoire/anglais.json">Anglais</option> -->
+						</select>
+					</div>
+					
+					<div class="card" id='frmPreparation'>
+						<div class="card-body">
+						<h5 class="card-title lisible">Mémorise les mots suivants. Quand tu es prêt, clique sur "Je suis prêt".</h5>
+
+						<div class="card-text">						
+							<table class="table table-bordered" id="mots">
+							<thead>
+								<tr>
+									<th></th>
+								</tr>
+							</thead>
+							<tbody>
+							</tbody>
+							</table>
+							<div>
+								<a class="btn btn-primary float-right" onclick="faireDictee()">Je suis prêt</a>
+							</div>
+						</div>
+					</div>
+											
+					<div class="card" id='frmTest'>
+						<div class="card-body">
+							<h5 class="card-title">Réécris les mots. Clique sur le bouton pour les réentendre.</h5>
+							<div id="dictee" class='form-inline'>				
+							<!-- Ici l'utilisateur doit réécirer les mots qui lui sont dits. Il peut cliquer sur le bouton "répéter" pour redire le mot en cours. Toutes ses réponses sont conservées -->
+							</div>
+							<button class="btn btn-primary float-right" onclick="corrigerDictee()">J'ai fini</button>
+						</div>
+					</div>
+					<div class="card" id='frmCorrection'>
+						<div class="card-body">
+							<h5 class="card-title" id="corrige"></h5>
+							<div class="btn btn-warning" onclick='location.reload()'>Recommencer</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
